@@ -71,6 +71,38 @@ body {
     color: white;
 }
 
+.brown {
+  color: gray;
+  font-size: 100px;
+  font-family: 'Water Brush', cursive;
+}
+
+.green {
+  font-family: 'Water Brush', cursive;
+  font-size: 100px;
+}
+
+.orange {
+  color: white;
+  font-size: 20px;
+  margin: 20px;
+  padding: 30px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.beautiful {
+  color: white;
+  font-size: 20px;
+  margin: 20px;
+  padding: 30px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.purple {
+  padding: 50px;
+  margin: 30px;
+}
+
 .hi {
     background-color: linear-gradient (#060547, #AB6BDC);
     color: pink;
@@ -91,6 +123,8 @@ body {
    bottom: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'Indie Flower', cursive;
+  
 }
 
 .yellow {
@@ -103,7 +137,9 @@ body {
     margin: 100px;
   }
   
-  
+  .fruit {
+    font-family: 'Water Brush', cursive;
+  }
   .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
@@ -141,7 +177,3 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
   
-  
-h2 {
-  font-size: 100px;
-}
