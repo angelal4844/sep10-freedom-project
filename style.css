@@ -1,179 +1,45 @@
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: linear-gradient (#060547, #AB6BDC);
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-/* Sidebar links */
-.sidebar a {
-  display: block;
-  color: pink;
-  padding: 16px;
-  text-decoration: none;
-}
-
-/* Active/current link */
-.sidebar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 500px;
-}
-
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
-
-.hola {
-    text-align: center;
-    font-family: 'Rubik Glitch', cursive;
-    font-size: 150px;
-    color:#454554;
-    text-shadow: 2px 2px #AF7AC5;
-}
-
 body {
-    background-image: linear-gradient(#000000, #000000, #31305D,#4F4D4C, #000000, #000000);
+  background-image: linear-gradient(#111212, #575B8F, #7850C0, #111212);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-.happy {
-    text-align:center;
-    color: white;
-}
 
-.brown {
-  color: gray;
-  font-size: 100px;
-  font-family: 'Water Brush', cursive;
-}
-
-.green {
-  font-family: 'Water Brush', cursive;
-  font-size: 100px;
-}
-
-.orange {
-  color: white;
-  font-size: 20px;
-  margin: 20px;
-  padding: 30px;
-  font-family: 'Indie Flower', cursive;
-}
-
-.beautiful {
-  color: white;
-  font-size: 20px;
-  margin: 20px;
-  padding: 30px;
-  font-family: 'Indie Flower', cursive;
-}
-
-.purple {
-  padding: 50px;
-  margin: 30px;
-}
-
-.hi {
-    background-color: linear-gradient (#060547, #AB6BDC);
-    color: pink;
-}
-
-.blue {
-  opacity: 0.2;
-}
-.centered {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hello {
-   position: absolute;
-   bottom: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Indie Flower', cursive;
-  
-}
-
-.yellow {
-  font-size: 20px;
-  color: white;
-  }
-  
-  .candy {
-    color: gray;
-    margin: 100px;
-  }
-  
-  .fruit {
-    font-family: 'Water Brush', cursive;
-  }
-  .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-/* The navigation menu links */
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
+  transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
-/* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-  
+}
