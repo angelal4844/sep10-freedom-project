@@ -86,3 +86,7 @@ body {
 .hola {
   opacity: 0.6;
 }
+
+.size {
+  margin: 30px;
+}
