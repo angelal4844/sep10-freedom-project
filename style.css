@@ -68,6 +68,24 @@ body {
   margin: 30px;
 }
 
+.fruit {
+  border: 5px white dashed;
+  margin: 30px;
+  font-size: 25px;
+  font-family: 'Tapestry', cursive;
+  color: white;
+}
+
+.title {
+  border:5px white dotted;
+  margin: 30px;
+  font-family: 'Tapestry', cursive;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  
+}
+
 .centered {
   position: absolute;
   top: 40%;
@@ -89,4 +107,17 @@ body {
 
 .size {
   margin: 30px;
+}
+
+.flower {
+  font-family: 'Water Brush', cursive;
+  font-size: 90px;
+  color: gray;
+  text-shadow: 3px 4px 5px #05F6ED;
+}
+
+.yellow {
+  color: lightblue;
+  text-decoration: underline;
+  text-decoration: bold;
 }
